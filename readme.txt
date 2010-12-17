@@ -1,4 +1,4 @@
-=== BP GTM System ===
+=== BP Admin Actions ===
 Contributors: slaFFik
 Tags: buddypress,admin,ajax,action,group,groups,manage,user,users,social,network
 Tested up to: 3.0.3 and 1.2.6
@@ -8,7 +8,7 @@ Requires at least: 2.9 and 1.2
 Let admin do some more stuff with users - adding them to any group manually from members list
 
 == Description ==
-An "Add To Group" button will appear near Add Friend in a list of members. This button will open a popup where a site admin can select a group he want this user become a member of.
+An "Add To Group" button will appear near Add Friend in a list of members. This button will open a popup where a site admin can select a group he wants this user become a member of.
 
 All actions are ajaxified.
 
