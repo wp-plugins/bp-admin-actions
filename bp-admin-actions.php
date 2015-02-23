@@ -49,7 +49,7 @@ var bpaa_strings = {
 }
 
 function bpaa_add_user_to_group_popup(){
-    if(is_site_admin())
+    if(current_user_can('administrator'))
         echo '<div id="popupGroups"></div><div id="backgroundPopup"></div>';
 }
 
@@ -96,7 +96,7 @@ function bpaa_add_user_to_group_silent_ajax(){
 add_action('wp_ajax_bpaa_add_user_to_group_silent_ajax','bpaa_add_user_to_group_silent_ajax');
 
 function bpaa_add_user_to_group_button(){
-    if(is_site_admin())
+    if(current_user_can('administrator'))
         echo '<div style="margin: 5px 0;" class="generic-button">
             <a class="add_to_group" rel="'.bp_get_member_user_id().'" href="#">'.__('Add To Group','bp_admin_actions').'</a>
             </div>';
